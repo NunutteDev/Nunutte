@@ -17,13 +17,15 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
+env:
+  BASEPATH: Nunutte
   
 jobs:
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-      BASEPATH: Nunutte
 
     runs-on: ubuntu-latest
     steps:
