@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
+
+const basePath = process.env.BASEPATH
 const nextConfig = {
   output: 'export',
   distDir: '_static',
-  basePath: '/Nunutte',
-  assetPrefix: '/Nunutte/',
+  basePath: basePath ? basePath : '',
   images: {
     unoptimized: true,
-    path: '/Nunutte/_next/image',
+    path: `${basePath ? basePath : ''}/_next/image`,
   }
-
 }
 
 module.exports = nextConfig

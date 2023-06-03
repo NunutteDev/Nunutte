@@ -23,6 +23,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      BASEPATH: Nunutte
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
