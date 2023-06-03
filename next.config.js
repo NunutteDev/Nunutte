@@ -2,11 +2,13 @@
 const nextConfig = {
   output: 'export',
   distDir: '_static',
-  basePath: '/NunutteDev',
-  assetPrefix: '/NunutteDev/',
+  basePath: '/Nunutte',
+  assetPrefix: '/Nunutte/',
   images: {
     unoptimized: true,
+    path: '/Nunutte/_next/image',
   }
+
 }
 
 module.exports = nextConfig
