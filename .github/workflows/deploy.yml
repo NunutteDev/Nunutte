@@ -18,9 +18,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-env:
-  BASEPATH: /Nunutte
-
 jobs:
   deploy:
     environment:
@@ -35,6 +32,7 @@ jobs:
           node-version: 16
 
       - run: |
+          export BASEPATH="/Nunutte"
           npm i
           npm run build
 
