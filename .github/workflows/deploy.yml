@@ -31,7 +31,6 @@ jobs:
           node-version: 16
 
       - run: |
-          cd ./nunutte
           npm i
           npm run build
 
@@ -39,7 +38,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: './nunutte/_static'
+          path: './_static'
       
       - name: Deploy to GitHub Pages
         id: deployment
