@@ -19,8 +19,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  BASEPATH: Nunutte
-  
+  BASEPATH: /Nunutte
+
 jobs:
   deploy:
     environment:
