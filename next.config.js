@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const basePath = process.env.BASEPATH
+console.log(basePath)
 const nextConfig = {
   output: 'export',
   distDir: '_static',
