@@ -32,7 +32,6 @@ jobs:
           node-version: 16
 
       - run: |
-          export BASEPATH="/Nunutte"
           npm i
           npm run build
 
