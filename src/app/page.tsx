@@ -44,7 +44,7 @@ export default function Home() {
         />
       </div> 
       <span className={`text-center place-items-center opacity-50 flex max-w-[100ch] text-sm opacity-50`}>
-        Don't smell the apple purée, this will make you cough.
+        {`Don't smell the apple purée, this will make you cough.`}
         </span>
 
       <div className="mb-12 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
